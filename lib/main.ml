@@ -21,6 +21,7 @@
  * 02111-1307, USA.
  *)
 
+(*
 external solo5_yield : Time.t -> int64 = "mirage_solo5_yield_2"
 
 (* A Map from Int64 (solo5_handle_t) to an Lwt_condition. *)
@@ -75,3 +76,6 @@ let () =
   at_exit (fun () ->
       Lwt.abandon_wakeups ();
       run (Mirage_runtime.run_exit_hooks ()))
+*)
+
+let () = Printf.printf "Hello world from mirage-unikraft:main.ml\n%!"

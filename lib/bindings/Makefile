@@ -1,11 +1,11 @@
 .PHONY: all clean
-all: libmirage-solo5_bindings.a
+all: libmirage-unikraft_bindings.a
 
-CC=ocamlfind -toolchain solo5 ocamlopt
-OBJS= clock_stubs.o mm_stubs.o main.o
+CC=ocamlfind -toolchain unikraft ocamlopt
+OBJS= main.o
 
-libmirage-solo5_bindings.a: $(OBJS)
+libmirage-unikraft_bindings.a: $(OBJS)
 	$(AR) r $@ $^
 
 clean:
-	$(RM) $(OBJS) libmirage-solo5_bindings.a
+	$(RM) $(OBJS) libmirage-unikraft_bindings.a
