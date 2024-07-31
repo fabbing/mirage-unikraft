@@ -78,4 +78,6 @@ let () =
       run (Mirage_runtime.run_exit_hooks ()))
 *)
 
-let () = Printf.printf "Hello world from mirage-unikraft:main.ml\n%!"
+let run _ =
+  Printf.printf "Hello world from mirage-unikraft:run\n%!";
+  ()
