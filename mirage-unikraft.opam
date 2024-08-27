@@ -19,18 +19,10 @@ build: [
 ]
 depends: [
   "dune" {>= "2.7.0"}
-  "bheap" {>= "2.0.0"}
   "ocaml" {>= "5.2.0"}
-  "cstruct" {>= "1.0.1"}
   "lwt" {>= "2.4.3"}
-  "metrics"
-  "metrics-lwt" {>= "0.2.0"}
-  "mirage-runtime" {>= "4.0"}
   "duration"
-]
-conflicts: [
-  "io-page" {< "2.4.0"}
-  "tcpip" {< "6.1.0"}
+  "mirage-runtime" {>= "4.0"}
 ]
 synopsis: "Unikraft core platform libraries for MirageOS"
 description: """
